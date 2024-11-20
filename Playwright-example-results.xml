@@ -1,8 +1,8 @@
-<testsuites id="" name="" tests="4" failures="2" skipped="1" errors="0" time="30.62848">
-<testsuite name="example.spec.ts" timestamp="2024-11-14T13:28:35.653Z" hostname="chromium" tests="4" failures="2" skipped="1" time="37.182" errors="0">
-<testcase name="test that should pass" classname="example.spec.ts" time="0.949">
+<testsuites id="" name="" tests="4" failures="2" skipped="1" errors="0" time="30.51065">
+<testsuite name="example.spec.ts" timestamp="2024-11-20T15:32:37.573Z" hostname="chromium" tests="4" failures="2" skipped="1" time="37.328" errors="0">
+<testcase name="test that should pass" classname="example.spec.ts" time="1.683">
 </testcase>
-<testcase name="test that should fail due to assertion error" classname="example.spec.ts" time="6.207">
+<testcase name="test that should fail due to assertion error" classname="example.spec.ts" time="5.635">
 <failure message="example.spec.ts:8:5 test that should fail due to assertion error" type="FAILURE">
 <![CDATA[  [chromium] › example.spec.ts:8:5 › test that should fail due to assertion error ──────────────────
 
@@ -14,24 +14,8 @@
     Call log:
       - expect.toHaveTitle with timeout 5000ms
       - waiting for locator(':root')
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        9 × locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-hydrated="true" class="plugin-pages plugin-id-default" data-rh="lang,dir,class,data-has-hydrated">…</html>
+          - unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
 
 
        8 | test("test that should fail due to assertion error", async ({ page }) => {
@@ -41,12 +25,11 @@
       11 | });
       12 |
       13 | test("test that should fail due to unexpected error", async ({ page }) => {
-
-        at /home/user/repos/playwright2/tests/example.spec.ts:10:22
+        at /home/user/repos/testing-frameworks/PlaywrightTest/tests/example.spec.ts:10:22
 ]]>
 </failure>
 </testcase>
-<testcase name="test that should fail due to unexpected error" classname="example.spec.ts" time="30.026">
+<testcase name="test that should fail due to unexpected error" classname="example.spec.ts" time="30.01">
 <failure message="example.spec.ts:13:5 test that should fail due to unexpected error" type="FAILURE">
 <![CDATA[  [chromium] › example.spec.ts:13:5 › test that should fail due to unexpected error ────────────────
 
@@ -64,8 +47,7 @@
       17 | });
       18 |
       19 | test.skip("test that should be skipped", async ({ page }) => {
-
-        at /home/user/repos/playwright2/tests/example.spec.ts:16:14
+        at /home/user/repos/testing-frameworks/PlaywrightTest/tests/example.spec.ts:16:14
 ]]>
 </failure>
 </testcase>
