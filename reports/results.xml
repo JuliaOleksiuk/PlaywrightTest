@@ -1,71 +1,50 @@
-<testsuites id="" name="" tests="4" failures="2" skipped="1" errors="0" time="30.62848">
-<testsuite name="example.spec.ts" timestamp="2024-11-14T13:28:35.653Z" hostname="chromium" tests="4" failures="2" skipped="1" time="37.182" errors="0">
-<testcase name="test that should pass" classname="example.spec.ts" time="0.949">
-</testcase>
-<testcase name="test that should fail due to assertion error" classname="example.spec.ts" time="6.207">
-<failure message="example.spec.ts:8:5 test that should fail due to assertion error" type="FAILURE">
-<![CDATA[  [chromium] › example.spec.ts:8:5 › test that should fail due to assertion error ──────────────────
+<testsuites id="" name="" tests="4" failures="3" skipped="1" errors="0" time="0.36897299999999994">
+<testsuite name="example.spec.ts" timestamp="2024-11-20T15:22:58.239Z" hostname="chromium" tests="4" failures="3" skipped="1" time="0.013" errors="0">
+<testcase name="test that should pass" classname="example.spec.ts" time="0.004">
+<failure message="example.spec.ts:3:5 test that should pass" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.ts:3:5 › test that should pass ─────────────────────────────────────────
 
-    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
-
-    Locator: locator(':root')
-    Expected string: "Non-Existent Title"
-    Received string: "Fast and reliable end-to-end testing for modern web apps | Playwright"
-    Call log:
-      - expect.toHaveTitle with timeout 5000ms
-      - waiting for locator(':root')
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
-      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
-
-
-       8 | test("test that should fail due to assertion error", async ({ page }) => {
-       9 |   await page.goto("https://playwright.dev/");
-    > 10 |   await expect(page).toHaveTitle("Non-Existent Title");
-         |                      ^
-      11 | });
-      12 |
-      13 | test("test that should fail due to unexpected error", async ({ page }) => {
-
-        at /home/user/repos/playwright2/tests/example.spec.ts:10:22
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
 ]]>
 </failure>
 </testcase>
-<testcase name="test that should fail due to unexpected error" classname="example.spec.ts" time="30.026">
+<testcase name="test that should fail due to assertion error" classname="example.spec.ts" time="0.005">
+<failure message="example.spec.ts:8:5 test that should fail due to assertion error" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.ts:8:5 › test that should fail due to assertion error ──────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="test that should fail due to unexpected error" classname="example.spec.ts" time="0.004">
 <failure message="example.spec.ts:13:5 test that should fail due to unexpected error" type="FAILURE">
 <![CDATA[  [chromium] › example.spec.ts:13:5 › test that should fail due to unexpected error ────────────────
 
-    Test timeout of 30000ms exceeded.
-
-    Error: page.click: Test timeout of 30000ms exceeded.
-    Call log:
-      - waiting for locator('#non-existent-element')
-
-
-      14 |   await page.goto("https://playwright.dev/");
-      15 |   // Attempting to interact with a non-existent element will cause an error
-    > 16 |   await page.click("#non-existent-element");
-         |              ^
-      17 | });
-      18 |
-      19 | test.skip("test that should be skipped", async ({ page }) => {
-
-        at /home/user/repos/playwright2/tests/example.spec.ts:16:14
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
 ]]>
 </failure>
 </testcase>
