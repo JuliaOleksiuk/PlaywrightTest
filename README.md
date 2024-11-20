@@ -1,7 +1,10 @@
 to run tests:
 
-[FIRST RUN] npx playwright install
-[FIRST RUN] npm install @playwright/test --save-dev
+[FIRST RUN]
+npx playwright install 
+npm install @playwright/test --save-dev
+
+THEN
 
 npx playwright test
 
