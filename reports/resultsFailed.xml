@@ -1,0 +1,101 @@
+<testsuites id="" name="" tests="4" failures="2" skipped="0" errors="0" time="7.278552">
+  <testsuite name="example.spec.ts" timestamp="2024-06-21T11:40:29.335Z" hostname="chromium" tests="2" failures="1" skipped="0" time="6.564" errors="0">
+    
+    <testcase name="has title" classname="example.spec.ts" time="5.656">
+    <failure message="example.spec.ts:3:5 has title" type="FAILURE">
+    <![CDATA[  [chromium] › example.spec.ts:3:5 › has title ─────────────────────────────────────────────────────
+
+        Error: Timed out 5000ms waiting for expect(locator).not.toHaveTitle(expected)
+
+        Locator: locator(':root')
+        Expected pattern: not /Playwright/
+        Received string: "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        Call log:
+          - expect.not.toHaveTitle with timeout 5000ms
+          - waiting for locator(':root')
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+          -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+          -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+
+
+          3 | test("has title", async ({ page }) => {
+          4 |   await page.goto("https://playwright.dev/");
+        > 5 |   await expect(page).not.toHaveTitle(/Playwright/);
+            |                          ^
+          6 | });
+          7 |
+          8 | test("get started link", async ({ page }) => {
+
+            at /home/user/repos/playwright2/tests/example.spec.ts:5:26
+    ]]>
+    </failure>
+    </testcase>
+    
+      <testcase name="get started link" classname="example.spec.ts" time="0.908">
+      </testcase>
+
+    </testsuite>
+  <testsuite name="example.spec.ts" timestamp="2024-06-21T11:40:29.335Z" hostname="firefox" tests="2" failures="1" skipped="0" time="7.583" errors="0">
+  <testcase name="has title" classname="example.spec.ts" time="6.13">
+  <failure message="example.spec.ts:3:5 has title" type="FAILURE">
+  <![CDATA[  [firefox] › example.spec.ts:3:5 › has title ──────────────────────────────────────────────────────
+
+      Error: Timed out 5000ms waiting for expect(locator).not.toHaveTitle(expected)
+
+      Locator: locator(':root')
+      Expected pattern: not /Playwright/
+      Received string: "Fast and reliable end-to-end testing for modern web apps | Playwright"
+      Call log:
+        - expect.not.toHaveTitle with timeout 5000ms
+        - waiting for locator(':root')
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+        -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+        -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+
+
+        3 | test("has title", async ({ page }) => {
+        4 |   await page.goto("https://playwright.dev/");
+      > 5 |   await expect(page).not.toHaveTitle(/Playwright/);
+          |                          ^
+        6 | });
+        7 |
+        8 | test("get started link", async ({ page }) => {
+
+          at /home/user/repos/playwright2/tests/example.spec.ts:5:26
+  ]]>
+  </failure>
+  </testcase>
+  <testcase name="get started link" classname="example.spec.ts" time="1.453">
+  </testcase>
+  </testsuite>
+</testsuites>
