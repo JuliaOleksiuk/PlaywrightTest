@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("test that should pass", async ({ page }) => {
+  test.info().annotations.push({ type: "Jira", description: "ABC-123" });
   await page.goto("https://playwright.dev/");
   await expect(page).toHaveTitle(/Playwright/);
 });
